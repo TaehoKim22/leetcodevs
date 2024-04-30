@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* App.css */
+.leetcode-page {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh; /* Use the full height of the viewport */
+  background-color: #f7f7f7; /* Set a neutral background color */
+  padding: 20px; /* Add padding around the content for better framing */
+  box-sizing: border-box; /* Include padding in the width and height calculations */
 }
 
-.App-link {
-  color: #61dafb;
+.left-side, .right-side {
+  width: calc(50% - 40px); /* Adjust width accounting for padding */
+  overflow-y: auto; /* Add scroll if content is too long */
+  background-color: #fff; /* Set a clean background for the content areas */
+  border-radius: 8px; /* Soften the corners with a border radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  margin: 0 20px; /* Ensure space between the two main containers */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.question-container, .testcases-container, .editor-container {
+  padding: 16px; /* Uniform padding for content */
+  border: 1px solid #e1e1e1; /* Light border for definition */
+  margin-bottom: 20px; /* Space between content sections */
+  background-color: #fff; /* Consistent background for content */
+  border-radius: 4px; /* Slightly rounded corners for content sections */
 }
+
+.editor-container {
+  border-bottom: 2px solid #e1e1e1; /* More pronounced line for separation */
+}
+
+/* Typography for a clean and modern look */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333; /* Dark grey color for better readability */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #222; /* Even darker color for headings */
+  margin-top: 0; /* Remove top margin from headings */
+}
+
+/* Add additional styling as needed */
